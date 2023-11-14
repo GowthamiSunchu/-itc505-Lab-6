@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('addendumBtn').addEventListener('click', () => {
         mainContent.innerHTML = `
             <h2>Addendum</h2>
-            <p>This section describes the problem solved by the JavaScript code, an overview of the solution, and any difficulties encountered during development.</p>
+            <p>This section describes the problem solved by the JavaScript code, an overview of the solution, and any difficulties encountered during development.Check the footer for more </p>
         `;
     });
 
