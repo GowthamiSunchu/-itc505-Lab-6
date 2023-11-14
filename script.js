@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
             <input type="text" id="arrayInput" placeholder="Enter numbers separated by commas">
             <button id="sortButton">Sort</button>
             <p id="sortedArray"></p>
-            <p id="error" style="color: red;"></p>
+            <p id="error" style="color: red;"></p> 
         `;
 
         document.getElementById('sortButton').addEventListener('click', sortArray);
@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const numbers = arrayInput.split(',').map(num => {
             const parsed = parseFloat(num.trim());
             if (isNaN(parsed)) {
-                errorElement.textContent = 'Please enter valid numbers.';
+                errorElement.textContent = 'Please enter valid numbers.'; 
                 throw new Error('Invalid input');
             }
             return parsed;
